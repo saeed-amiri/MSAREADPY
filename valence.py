@@ -69,8 +69,15 @@ for f in glob.glob("*.msa"):
 
 plt.legend()
 plt.xlabel("Energy Loss [eV]")
+<<<<<<< HEAD
 plt.ylabel("Normalized Intesity [a.u.]")
 plt.xlim([620,700])
+=======
+plt.ylabel("Intesity [a.u.]")
+xl = 620; xh = 700
+plt.xlim([xl,xh])
+ax.text((xh+xl)/2, 20000,"Valence = {:.3}".format(valence))
+>>>>>>> modifying the labels
 
 plt.show()
 #plt.savefig("fig.png")
